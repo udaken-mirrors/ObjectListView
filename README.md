@@ -26,17 +26,15 @@ ObjectListView is a C# convenience wrapper around .NET's ListView. It makes the 
 
 - `TreeListView` supports hierarchical checkboxes
 
-  
-
----
-
-
+## Credits
 
 [Phillip Piper](https://sourceforge.net/u/grammarian/profile/) created an awesome C# wrapper around a .NET `ListView`. He calls his `ObjectListView` a *".NET ListView on caffeine, guarana and steroids."*
 
-*This fork* implements updates and minor enhancements.
-
 The original project is available at [SourceForge.net](https://sourceforge.net/projects/objectlistview/) with a [discussion forum](https://sourceforge.net/p/objectlistview/discussion/) being still active.
+
+---
+
+*This fork* implements updates and minor enhancements. A .nuget package is available at [GitHub Packages](https://github.com/geomatics-io/ObjectListView/packages/936891).
 
 
 
