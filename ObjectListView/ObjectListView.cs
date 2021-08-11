@@ -7173,6 +7173,46 @@ namespace BrightIdeasSoftware
         private string menuLabelSelectColumns = "Select Columns...";
 
         /// <summary>
+        /// 
+        /// </summary>
+        [Category("Labels - ObjectListView"), DefaultValue("Filtering"), Localizable(true)]
+        public string MenuLabelFilter
+        {
+            get { return FilterMenuBuilder.FILTERING_LABEL; }
+            set { FilterMenuBuilder.FILTERING_LABEL = value;  }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [Category("Labels - ObjectListView"), DefaultValue("Clear All Filters"), Localizable(true)]
+        public string MenuLabelClearFilter
+        {
+            get { return FilterMenuBuilder.CLEAR_ALL_FILTERS_LABEL; }
+            set { FilterMenuBuilder.CLEAR_ALL_FILTERS_LABEL = value; }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [Category("Labels - ObjectListView"), DefaultValue("Apply"), Localizable(true)]
+        public string MenuLabelApplyFilter
+        {
+            get { return FilterMenuBuilder.APPLY_LABEL; }
+            set { FilterMenuBuilder.APPLY_LABEL = value; }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [Category("Labels - ObjectListView"), DefaultValue("Select All"), Localizable(true)]
+        public string MenuLabelSelectAllFilter
+        {
+            get { return FilterMenuBuilder.SELECT_ALL_LABEL; }
+            set { FilterMenuBuilder.SELECT_ALL_LABEL = value; }
+        }
+
+        /// <summary>
         /// Gets or sets the image that will be place next to the Sort Ascending command
         /// </summary>
         public static Bitmap SortAscendingImage = BrightIdeasSoftware.Properties.Resources.SortAscending;
