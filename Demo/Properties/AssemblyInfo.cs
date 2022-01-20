@@ -31,3 +31,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyVersion("2.9.0.0")]
 [assembly: AssemblyFileVersionAttribute("2.9.0")]
 [assembly: System.CLSCompliant(true)]
+
+#if NET5_0_OR_GREATER
+[assembly: System.Runtime.Versioning.SupportedOSPlatform("windows")]
+#endif

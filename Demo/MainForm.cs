@@ -24,8 +24,15 @@ namespace ObjectListViewDemo {
 
         [STAThread]
         public static void Main(string[] args) {
+#if NET6_0_OR_GREATER
+            ApplicationConfiguration.Initialize();
+#else
+#if NET5_0
+            Application.SetHighDpiMode(HighDpiMode.SystemAware);
+#endif
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+#endif
             Application.Run(new MainForm());
         }
 
