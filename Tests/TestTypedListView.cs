@@ -44,7 +44,7 @@ namespace BrightIdeasSoftware.Tests {
                 this.tolv.ListView.GetColumn(i).AspectGetter = null;
         }
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void Init() {
             this.tolv = new TypedObjectListView<Person>(MyGlobals.mainForm.objectListView1);
         }

@@ -125,7 +125,7 @@ zzz Last Alphabetical Name	occupation6	60	True
 ");
         }
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void Init() {
             this.olv = MyGlobals.mainForm.objectListView1;
         }

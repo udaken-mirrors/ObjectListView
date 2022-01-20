@@ -211,7 +211,7 @@ namespace BrightIdeasSoftware.Tests
             Assert.AreEqual(PersonDb.All[0].Name, ((Person)this.olv.GetModelObject(0)).Name);
         }
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void Init()
         {
             this.olv = MyGlobals.mainForm.objectListView1;
@@ -232,7 +232,7 @@ namespace BrightIdeasSoftware.Tests
             // FastObjectListViews don't really support Unsort()
         }
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         new public void Init()
         {
             this.olv = MyGlobals.mainForm.fastObjectListView1;

@@ -34,7 +34,7 @@ namespace BrightIdeasSoftware.Tests
             Assert.AreEqual("AspectToStringConverter called", column.GetStringValue(this.person1));
         }
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void Init() {
             this.person1 = new Person("name", "occupation", 100, DateTime.Now, 1.0, true, "  photo  ", "comments");
             this.person2 = new Person2("name", "occupation", 100, DateTime.Now, 1.0, true, "  photo  ", "comments");
@@ -133,7 +133,7 @@ namespace BrightIdeasSoftware.Tests
             }
         }
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void Init() {
             this.person1 = new Person("name", "occupation", 100, DateTime.Now, 1.0, true, "  photo  ", "comments");
             this.person2 = new Person2("name", "occupation", 100, DateTime.Now, 1.0, true, "  photo  ", "comments");
@@ -169,7 +169,7 @@ namespace BrightIdeasSoftware.Tests
             this.ExecuteAspect2("Unknown", "'Unknown' is not a parameter-less method, property or field of type 'System.Collections.Generic.Dictionary`2[System.String,System.Object]'");
         }
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public new void Init() {
             this.dict1 = new Hashtable();
             this.dict2 = new Dictionary<string, object>();
@@ -283,7 +283,7 @@ namespace BrightIdeasSoftware.Tests
             Assert.AreEqual(20.0, this.person2.GetRate());
         }
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void Init() {
             this.person1 = new Person("name", "occupation", 100, DateTime.Now, 1.0, true, "  photo  ", "comments");
             this.person2 = new Person2("name", "occupation", 100, DateTime.Now, 1.0, true, "  photo  ", "comments");
@@ -325,7 +325,7 @@ namespace BrightIdeasSoftware.Tests
             this.ExecuteAspect2("Occupation", "NEW occupation2");
         }
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void Init() {
             this.dict1 = new Hashtable();
             this.dict2 = new Dictionary<string, object>();

@@ -69,10 +69,10 @@ namespace BrightIdeasSoftware.Tests
         // Base line: Elapsed time: 1547ms 2010-08-04
         // Base line: Elapsed time:  442ms 2010-08-10 New SimpleMunger implementation
 
-        [STAThread]
-        private static void Main(string[] args) {
-            GenerateDocs();
-        }
+        //[STAThread]
+        //private static void Main(string[] args) {
+        //    GenerateDocs();
+        //}
 
         static void GenerateDocs() {
             StringBuilder sb = new StringBuilder();

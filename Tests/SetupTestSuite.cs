@@ -17,7 +17,7 @@ namespace BrightIdeasSoftware.Tests
     [SetUpFixture]
     public class MyGlobals
     {
-        [SetUp]
+        [OneTimeSetUp]
         public void RunBeforeAnyTests()
         {
             MyGlobals.mainForm = new MainForm();
@@ -26,7 +26,7 @@ namespace BrightIdeasSoftware.Tests
         }
         public static MainForm mainForm;
 
-        [TearDown]
+        [OneTimeTearDown]
         public void RunAfterAnyTests()
         {
             MyGlobals.mainForm.Close();
